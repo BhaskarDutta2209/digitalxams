@@ -1,0 +1,389 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "addcourse",
+            "base": "",
+            "fields": [
+                {
+                    "name": "course_name",
+                    "type": "string"
+                },
+                {
+                    "name": "course_duration",
+                    "type": "string"
+                },
+                {
+                    "name": "course_details",
+                    "type": "string"
+                },
+                {
+                    "name": "no_of_sem",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "addmarks",
+            "base": "",
+            "fields": [
+                {
+                    "name": "student_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "course_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "subject_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "full_marks",
+                    "type": "uint64"
+                },
+                {
+                    "name": "marks_obtained",
+                    "type": "uint64"
+                },
+                {
+                    "name": "grade",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "addsubject",
+            "base": "",
+            "fields": [
+                {
+                    "name": "subject_name",
+                    "type": "string"
+                },
+                {
+                    "name": "subject_details",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "addteacher",
+            "base": "",
+            "fields": [
+                {
+                    "name": "teacher_account",
+                    "type": "name"
+                },
+                {
+                    "name": "teacher_name",
+                    "type": "string"
+                },
+                {
+                    "name": "contact_details",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "courses",
+            "base": "",
+            "fields": [
+                {
+                    "name": "course_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "student_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "course_name",
+                    "type": "string"
+                },
+                {
+                    "name": "course_duration",
+                    "type": "string"
+                },
+                {
+                    "name": "course_details",
+                    "type": "string"
+                },
+                {
+                    "name": "no_of_sem",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "enrollstudnt",
+            "base": "",
+            "fields": [
+                {
+                    "name": "student_name",
+                    "type": "string"
+                },
+                {
+                    "name": "college_name",
+                    "type": "string"
+                },
+                {
+                    "name": "contact_info",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "initiate",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "marks",
+            "base": "",
+            "fields": [
+                {
+                    "name": "marks_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "subject_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "student_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "course_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "full_marks",
+                    "type": "uint64"
+                },
+                {
+                    "name": "marks_obtained",
+                    "type": "uint64"
+                },
+                {
+                    "name": "semester_no",
+                    "type": "uint64"
+                },
+                {
+                    "name": "grade",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "permissions",
+            "base": "",
+            "fields": [
+                {
+                    "name": "main_admin",
+                    "type": "name"
+                },
+                {
+                    "name": "admin_of_faculty",
+                    "type": "name"
+                },
+                {
+                    "name": "admin_of_subjects",
+                    "type": "name"
+                },
+                {
+                    "name": "admin_of_students",
+                    "type": "name"
+                },
+                {
+                    "name": "admin_of_courses",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "setperm",
+            "base": "",
+            "fields": [
+                {
+                    "name": "main_admin",
+                    "type": "name"
+                },
+                {
+                    "name": "admin_of_faculty",
+                    "type": "name"
+                },
+                {
+                    "name": "admin_of_subjects",
+                    "type": "name"
+                },
+                {
+                    "name": "admin_of_students",
+                    "type": "name"
+                },
+                {
+                    "name": "admin_of_courses",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "students",
+            "base": "",
+            "fields": [
+                {
+                    "name": "student_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "s_name",
+                    "type": "string"
+                },
+                {
+                    "name": "college_name",
+                    "type": "string"
+                },
+                {
+                    "name": "contact_info",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "subjects",
+            "base": "",
+            "fields": [
+                {
+                    "name": "subject_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "course_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "teacher_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "subject_name",
+                    "type": "string"
+                },
+                {
+                    "name": "subject_details",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "teachers",
+            "base": "",
+            "fields": [
+                {
+                    "name": "teacher_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "teacher_account",
+                    "type": "name"
+                },
+                {
+                    "name": "teacher_name",
+                    "type": "string"
+                },
+                {
+                    "name": "contact_details",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addcourse",
+            "type": "addcourse",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addmarks",
+            "type": "addmarks",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addsubject",
+            "type": "addsubject",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addteacher",
+            "type": "addteacher",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "enrollstudnt",
+            "type": "enrollstudnt",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "initiate",
+            "type": "initiate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setperm",
+            "type": "setperm",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "courses",
+            "type": "courses",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "marks",
+            "type": "marks",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "permissions",
+            "type": "permissions",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "students",
+            "type": "students",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "subjects",
+            "type": "subjects",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "teachers",
+            "type": "teachers",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
